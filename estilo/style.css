@@ -5,6 +5,7 @@
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo:#00030C;
+    --botao-azul-efeito: #3f95ff;
 }
 
 body {
@@ -25,6 +26,8 @@ body {
     background-image: url(../imagens/Background.png);
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
 }
 
 .titulo {
@@ -45,6 +48,13 @@ body {
     text-decoration: none;
     color: var(--branco-principal);
     display: block;
+    margin-bottom: 1em;
+}
+
+.container-btn:hover {
+    background-color: #3f95ff;
+    color: var(--cor-de-fundo);
+    font-weight: 700;
 }
 
 .btn-secundario {
@@ -59,4 +69,100 @@ body {
 
 .container-imagem {
     margin: 1em 0 2em 0;
+}
+
+.container-caixa {
+    margin: 0 6em;
+}
+
+/* css segunda section */
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario-img {
+    width: 80%;
+}
+
+.titulo-descricao {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.texto-descricao {
+    color: var(--cinza-secundario);
+}
+
+/* css terceira section */
+.secundario-btn {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.descricao {
+    padding: 2em;
+}
+
+/* css quarta section usamos as mesmas class acima */
+
+/* css abaixo é da parte dispositivos */
+.dispositivos-listas {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos-titulo {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco-principal);
+}
+
+.lista-item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+/* css footer */
+.rodape {
+    text-align: center;
+    margin-top: 0 3em;
+}
+
+.rodape-logo{
+    margin-bottom: 2em;
+}
+
+.rodape-lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.lista-link, a {
+    color: var(--cinza-secundario);
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 1em;
+}
+
+.lista-link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista-link a:active {
+    color: darkgreen;
+}
+
+.rodape-texto {
+    color: var(--cinza-secundario);
+    margin: 2em 0 3em 0;
 }
